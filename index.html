@@ -6,8 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<h1>Pog</h1>
+<h1>Mijn pagina</h1>
+<p>Maak de body blauw</p>
+<p>Maak de body rood</p>
+<p>Maak de body groen</p>
 <body>
-    
+    <script>
+        document.getElementsByTagName('p')[0].addEventListener('click', ClickHandler01);
+        document.getElementsByTagName('p')[1].addEventListener('click', ClickHandler02);
+        document.getElementsByTagName('p')[2].addEventListener('click', ClickHandler03);
+
+        function ClickHandler01(){
+            document.getElementsByTagName('p')[0].style.color = "white";
+            document.body.style.background = "blue";
+        }
+        function ClickHandler02(){
+            document.body.style.background = "red";
+            document.getElementsByTagName('p')[1].style.color = "white";
+        }
+        function ClickHandler03(){
+            document.body.style.background = "green";
+            document.getElementsByTagName('p')[2].style.color = "white";
+        }
+    </script>
 </body>
 </html>
